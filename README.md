@@ -1,5 +1,5 @@
-# DIce-Roll-Game
+# Dice-Roll-Game
 
 Technologies Used: HTML5, CSS3, Javascript, SASS
 
-Live: https://keyur22.github.io/Rock-Paper-Scissors-UI-Version-/
+Live: https://keyur22.github.io/Dice-Roll-Game/
