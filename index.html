@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css" />
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,26 +16,31 @@
 
 <body>
     <!-- Start Game Container -->
-    <div class="container-fluid flex-wrap justify-content-center align-items-center welcome-section bg-info">
-        <form class="border rounded p-3 w-50 bg-white" id="abcd">
-            <h2 class="text-center text-danger mb-5 font-weight-bold">Pig - the Dice Game</h2>
-            <div class="form-group">
-                <label for="player1" class="text-danger">Player 1 Name:</label>
-                <input type="text" class="form-control" id="player1" placeholder="Default: Player 1" />
+    <div class="container-fluid welcome-section">
+        <div class="row pt-5">
+            <div class="col-12 col-md-6 m-auto">
+                <form class="border rounded p-3 w-100 bg-white" id="abcd">
+                    <h2 class="text-center text-danger mb-5 font-weight-bold">Pig - the Dice Game</h2>
+                    <div class="form-group">
+                        <label for="player1" class="text-danger">Player 1 Name:</label>
+                        <input type="text" class="form-control" id="player1" placeholder="Default: Player 1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="player2" class="text-danger">Player 2 Name:</label>
+                        <input type="text" class="form-control" id="player2" placeholder="Default: Player 2" />
+                    </div>
+                    <div class="form-group">
+                        <label for="score" class="text-danger">Winning Score:</label>
+                        <input type="number" class="form-control" id="score" placeholder="Default: 100" min="1" />
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success text-white">Start Game</button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal"
+                            data-target="#rules">Rules</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="player2" class="text-danger">Player 2 Name:</label>
-                <input type="text" class="form-control" id="player2" placeholder="Default: Player 2" />
-            </div>
-            <div class="form-group">
-                <label for="score" class="text-danger">Winning Score:</label>
-                <input type="number" class="form-control" id="score" placeholder="Default: 100" min="1" />
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-success text-white">Start Game</button>
-                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#rules">Rules</button>
-            </div>
-        </form>
+        </div>
     </div>
 
     <!-- Game Play Container -->
@@ -65,8 +71,9 @@
         <img src="dice-5.png" alt="Dice" class="dice">
     </div>
 
-    <div class="modal fade" tabindex="-1" role="dialog" id="rules">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" tabindex="-1" role="dialog" id="rules" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content border-primary">
                 <div class="modal-header">
                     <h5 class="modal-title text-danger font-weight-bold text-center">Rules</h5>

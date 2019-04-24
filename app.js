@@ -70,7 +70,7 @@ document.querySelector(".btn-new").addEventListener("click", init);
 
 // Initialise Game
 function init() {
-	document.querySelector(".welcome-section").style.display = "flex";
+	document.querySelector(".welcome-section").style.display = "block";
 	document.querySelector(".game-section").style.display = "none";
 	scores = [0, 0];
 	activePlayer = 0;

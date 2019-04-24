@@ -167,14 +167,10 @@ i {
 .winner {
 	background-color: #f7f7f7;
 }
+
 .winner .player-name {
 	font-weight: 300;
 	color: #eb4d4d;
-}
-
-.welcome-section {
-	display: flex;
-	height: 100vh;
 }
 
 .game-section {
